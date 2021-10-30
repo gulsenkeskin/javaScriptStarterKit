@@ -28,3 +28,13 @@ function someFunction([small1], number) {
 }
 someFunction(populations)
 //gelen dizinin ilk elemanını small1 değişkenine atar ve onu yazar
+
+
+let category = { id: 1, name: "içecek" }
+console.log(category.id);
+console.log(category["name"])
+
+//object destruction example:
+let { id, name } = category
+console.log(id)
+console.log(name)
