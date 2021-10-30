@@ -6,9 +6,13 @@ class Customer {
 }
 
 let customer = new Customer(1, "1145485");
-//prototyping
+//instance a yapılan prototyping
 customer.name = "gülsen"
 console.log(customer.name)
+
+//class a yapılan prototyping
+Customer.bisey = "bişey"
+console.log(Customer.bisey)
 
 //deperleri atamak için prototype dediğimiz yapıyı kullanıyoruz
 //değerleri constructor ile geçiyoruz
