@@ -21,3 +21,10 @@ console.log(medium)
 console.log(high)
 console.log(veryHigh)
 console.log(maximum)
+
+//example: 2
+function someFunction([small1], number) {
+    console.log(small1)
+}
+someFunction(populations)
+//gelen dizinin ilk elemanını small1 değişkenine atar ve onu yazar
