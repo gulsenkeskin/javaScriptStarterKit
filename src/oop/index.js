@@ -1,6 +1,8 @@
 class Customer {
     constructor(id, customerNumber) {
-
+        //prototyping example
+        this.id = id;
+        this.customerNumber = customerNumber;
     }
 
 }
@@ -14,5 +16,7 @@ console.log(customer.name)
 Customer.bisey = "bişey"
 console.log(Customer.bisey)
 
-//deperleri atamak için prototype dediğimiz yapıyı kullanıyoruz
+console.log(customer.customerNumber)
+
+//değerleri atamak için prototype dediğimiz yapıyı kullanıyoruz
 //değerleri constructor ile geçiyoruz
