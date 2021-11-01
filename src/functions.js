@@ -14,3 +14,18 @@ let sayHello2 = function () {
 }
 
 sayHello2()
+
+function addToCart2(productName, quantity, unitPrice) {
+    console.log("productName : " + productName)
+
+}
+addToCart2("elma", 5, 10)
+
+
+let product1 = { productName: "kivi", unitPrice: 8, quantity: 35 }
+
+function addToCart3(product) {
+    console.log("productName : " + product.productName)
+}
+
+addToCart3(product1)
