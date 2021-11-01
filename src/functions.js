@@ -97,4 +97,34 @@ console.log(Math.max(...numbers))
 
 //spread ayrıştırır rest toparlar
 
+//----------------
+// let [icAnadolu, marmara] = ["iç anadolu", "marmara", "ege"]
+// console.log(icAnadolu)
+// console.log(marmara)
+
+//----------
+//DESTRUCTION EXAMPLE
+let [icAnadolu, marmara, karadeniz, [icAnadoluSehirleri]] = [
+    { name: "İç Anadolu", population: "20M" },
+    { name: "Marmara", population: "30M" },
+    { name: "Karadeniz", populations: "10M" },
+    [
+        ["Ankara", "Konya"],
+        ["İstanbul", "Bursa"],
+        ["Sinop", "Samsun"]
+
+    ]
+]
+console.log(icAnadolu.name)
+console.log(icAnadolu.population)
+console.log(icAnadoluSehirleri)
+
+//object destruction example
+let newProductName, newUnitPrice, newQuantity
+({ productName: newProductName, unitPrice: newUnitPrice, quantity: newQuantity } = { productName: "Elma", unitPrice: 10, quantity: 5 })
+
+console.log(newProductName)
+console.log(newUnitPrice)
+console.log(newQuantity)
+
 
