@@ -31,3 +31,17 @@ function sayiTopla(number) {
 }
 sayiTopla(sayi)
 console.log(sayi) //10
+
+//hem iterate eder hem yeni bir array verir 
+// cart.map(product => console.log(product.productName))
+
+console.log("<ul>")
+cart.map(product => {
+    console.log("<li>" + product.productName + " : " + product.unitPrice * product.quantity + "</li >")
+})
+console.log("</ul>")
+
+//filter
+let quantityOver2 = cart.filter(product => product.quantity)
+
+console.log(quantityOver2)
