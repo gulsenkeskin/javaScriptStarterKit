@@ -41,6 +41,17 @@ cart.map(product => {
 })
 console.log("</ul>")
 
+//reduce
+//acc accumulator , product takma isim
+//toplam hesaplayacağımız için başlabgıç bir accumulatöre ihtiyacımız var ve her bir eleman için 0 toplamaya kaçtan başlanacağı accumulatör ün başlangııç değeri
+// acc yi başlattığımız yer
+let total = cart.reduce((acc, product) => acc + product.unitPrice * product.quantity, 0)
+
+
+console.log(total)
+
+
+
 //filter
 let quantityOver2 = cart.filter(product => product.quantity)
 
