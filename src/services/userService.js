@@ -1,6 +1,6 @@
 export default class UserService {
-    add() {
-        console.log("Kullanıcı eklendi")
+    add(user) {
+        console.log("Kullanıcı eklendi" + user)
     }
     list() {
         console.log("Kullanıcılar listelendi")
