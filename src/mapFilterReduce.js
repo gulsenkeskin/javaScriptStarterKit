@@ -53,6 +53,6 @@ console.log(total)
 
 
 //filter
-let quantityOver2 = cart.filter(product => product.quantity)
+let quantityOver2 = cart.filter(product => product.quantity>3)
 
 console.log(quantityOver2)
